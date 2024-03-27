@@ -1,0 +1,10 @@
+<div class="mt-1 mb-2 p-3 bg-success text-white rounded text-center">
+    <h2>Reusable table component</h2>
+</div>
+<div class="row">
+    <div class="col-12">
+        <app-void-table  [showActionButton]="true" [tableData]="usersArray" [columnArray]="['name','username','email','phone','website','Action']"
+        (onEdit)="editUser($event)" (onDelete)="deleteUser($event)">
+        </app-void-table>
+    </div>
+</div>

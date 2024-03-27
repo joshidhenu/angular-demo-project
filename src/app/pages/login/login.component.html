@@ -1,0 +1,88 @@
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                    <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Log In</h4>
+                                        <div class="form-group">
+                                            <input type="email" [(ngModel)]="loginObj.email" name="logemail"
+                                                class="form-style" placeholder="Your Email" id="logemail"
+                                                autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" [(ngModel)]="loginObj.password" name="password"
+                                                class="form-style" placeholder="Your Password" id="logpass"
+                                                autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn" (click)="onLogin()">Login</button>
+                                        <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your
+                                                password?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Sign Up</h4>
+                                        <div class="form-group mt-2">
+                                            <input type="email" [(ngModel)]="signupobj.email" name="email" class="form-style"
+                                                placeholder="Your Email" id="email" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" [(ngModel)]="signupobj.name" name="name" class="form-style"
+                                                placeholder="Your Name" id="name" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="tel" [(ngModel)]="signupobj.phone" name="phone" class="form-style"
+                                                placeholder="Your Phone Number" id="phone" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" [(ngModel)]="signupobj.password" name="password" class="form-style"
+                                                placeholder="Your Password" id="passsword" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" [(ngModel)]="signupobj.password2" name="password2" class="form-style"
+                                                placeholder="Confirm Your Password" id="password2" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="date" [(ngModel)]="signupobj.date_of_birth" name="date_of_birth" class="form-style"
+                                                placeholder="Your Date Of Birth" id="date_of_birth" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" [(ngModel)]="signupobj.gender" name="gender" class="form-style"
+                                                placeholder="Your gender" id="gender" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" [(ngModel)]="signupobj.address" name="address" class="form-style"
+                                                placeholder="Your Addresss" id="address" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <button type="submit" class="btn" (click)="onSignup()">SignUp</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

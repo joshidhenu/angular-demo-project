@@ -1,0 +1,26 @@
+/* splash.component.css */
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.splash-container img {
+  width: 200px;
+  height: auto;
+}
+/* splash.component.css */
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.splash-container img {
+  width: 200px;
+  height: auto;
+}
